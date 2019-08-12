@@ -19,8 +19,8 @@ export class CreatePostButton extends React.Component {
         this.form.validateFields((err, values) => {
             console.log(values);
             if (!err) {
-                const token = localStorage.getItem(TOKEN_KEY);
                 const { lat, lon } = JSON.parse(localStorage.getItem(POS_KEY));
+                const token = localStorage.getItem(TOKEN_KEY);
 
                 const formData = new FormData();
                 formData.set('lat', lat);

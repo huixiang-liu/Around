@@ -1,4 +1,4 @@
-export const API_ROOT = 'https://around-75015.appspot.com/api/v1';
+export const API_ROOT = 'https://around-75015.appspot.com/api/V2';
 export const TOKEN_KEY = 'TOKEN_KEY';
 export const GEO_OPTIONS = {
     enableHighAccuracy: true,
@@ -10,3 +10,4 @@ export const AUTH_HEADER = 'Bearer';
 export const POST_TYPE_IMAGE = 'image';
 export const POST_TYPE_VIDEO = 'video';
 export const POST_TYPE_UNKNOWN = 'unknown';
+export const LOC_SHAKE = 0.02;

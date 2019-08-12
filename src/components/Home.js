@@ -45,6 +45,8 @@ export class Home extends React.Component {
     }
 
     onFailedLoadGeoLocation = () => {
+        console.log("Failed to load GeoLocation, set Geolocation to default value");
+        localStorage.setItem(POS_KEY, JSON.stringify({ lat: 37.386051, lon: -122.083855 }));
         this.setState({ isLoadingGeoLocation: false, error: 'Failed to load geo location.' });
     }
 
